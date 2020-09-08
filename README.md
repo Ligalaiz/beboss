@@ -1,6 +1,6 @@
 # beboss
 
-Link: [beboss](http://ligalaiz.github.io/beboss)
+Link: [beboss](http://ligalaiz.github.io/beboss/)
 
 ## Лицензия
 
