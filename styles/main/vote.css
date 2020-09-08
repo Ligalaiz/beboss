@@ -1,0 +1,299 @@
+.vote {
+  padding-top: 32px;
+  padding-bottom: 118px;
+  background: linear-gradient(0deg, #eceef2 0%, rgba(236, 238, 242, 0) 100%);
+}
+
+/* label */
+
+.label {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  max-width: 338px;
+  margin-bottom: 24px;
+}
+
+.label__img {
+  margin-right: 16px;
+}
+
+.label__text {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.label__text--bold {
+  font-weight: 700;
+}
+
+/* header */
+
+.vote__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vote__header {
+  margin-bottom: 40px;
+
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+/* video */
+
+.vote__video {
+  position: relative;
+  max-width: 832px;
+  margin-right: 8px;
+}
+
+.vote__video::before {
+  position: absolute;
+  content: '';
+  width: 53px;
+  height: 58px;
+  background-image: url('../../img/main/vote/play.svg');
+  top: 42%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+.vote__video::after{
+  position: absolute;
+  content: 'Смотреть видео';
+  width: 152px;
+  height: 40px;
+  top: 56%;
+  left: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* social */
+
+.social {
+  padding-top: 15px;
+  max-width: 256px;
+}
+
+.social__title { 
+  margin-bottom: 16px;
+
+  letter-spacing: 0.4px;
+}
+
+.social__text {  
+  margin-bottom: 26px;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.social__btn {
+  margin-bottom: 16px;
+}
+.social__item {
+  position: relative;
+  display: block;
+
+  margin-bottom: 8px;
+  padding: 17px 46px;
+  padding-left: 75px;
+  border-radius: 30px;
+  min-height: 60px;
+
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+
+  transition: all 0.2s linear;
+}
+
+.social__item:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.social__item:active{
+  box-shadow: none;
+}
+.social__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.social__item--fb {
+  background-color: #1F3B74;
+}
+
+.social__item--vk {
+  background-color: #27466A;
+}
+
+.social__item--ok {
+  background-color: #D06313;
+}
+
+.social__item--fb::before {
+  background-image: url('../../img/main/vote/fb.svg');
+}
+
+.social__item--vk::before {
+  background-image: url('../../img/main/vote/vk.svg');
+}
+
+.social__item--ok::before {
+  background-image: url('../../img/main/vote/ok.svg');
+}
+
+.social__stat {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+@media(max-width: 1144px) {
+  .vote__wrap {
+    flex-wrap: wrap;
+  }
+
+  .vote__video {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vote__video video{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .vote__header {
+    margin-bottom: 34px;
+
+    font-size: 34px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    max-width: none;
+  }
+
+  .social__item {
+    margin-right: 5px;
+  }
+
+  .social__btn li:last-child {
+    margin-right: 0;
+  }
+
+  .social__btn {
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 196px;
+  }
+}
+
+@media(max-width: 813px) {
+  .social__item {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+
+    font-size: 0;
+  }
+}
+
+@media(max-width: 796px) {
+  .vote {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .vote__header {
+    font-size: 30px;
+  }
+
+  .social__item {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+
+    font-size: 0;
+  }
+}
+
+@media(max-width: 576px) {
+  .label {
+    margin-left: 16px;
+    margin-bottom: 33px;
+  }
+
+  .label__text,
+  .label__img {
+    font-size: 16px;
+  }
+
+  .vote {
+    margin-bottom: 32px;
+    padding-bottom: 7px;
+  }
+
+  .vote__header {
+    font-size: 24px;
+  }
+
+  .vote__video {
+    margin-bottom: 10px;
+  }
+
+  .vote__video::after {
+    display: none;
+  }
+
+  .vote__video::before {
+    top: 49%;
+    left: 52%;
+  }
+
+  .social__item {
+    margin-right: 0;
+  }
+
+  .social__text {
+    margin-bottom: 20px;
+  }
+
+  .social__stat {
+    display: none;
+  }
+}

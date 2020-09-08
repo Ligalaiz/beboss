@@ -1,0 +1,30 @@
+.indicators {
+  width: 23%;
+}
+
+.indicators__data {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.indicators__title {
+  padding-bottom: 19px;
+  margin-bottom: 16px;
+
+  letter-spacing: 0.3px;
+}
+
+.indicators__title::before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  max-width: 256px;
+  height: 1px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.indicators__item {
+  margin-bottom: 15px;
+}

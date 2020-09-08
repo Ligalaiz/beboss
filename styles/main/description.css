@@ -1,0 +1,149 @@
+.description {
+  position: relative;
+  top: -45px;
+}
+
+.description__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__wrap::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.description__main {
+  width: 74.3%;
+}
+
+/* company */
+
+.about-company {
+  margin-bottom: 33px;
+}
+
+.about-company__title {
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+}
+
+.about-company__title::before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  max-width: 832px;
+  height: 1px;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.about-company__text {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.about-company__text--last {
+  margin-bottom: 19px;
+
+  letter-spacing: -0.1px;
+  line-height: 1.5;
+}
+
+.about-company__link {
+  position: relative;
+  padding-right: 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+.about-company__link::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+
+  background-repeat: no-repeat;
+  background-image: url('../../img/arrow.svg');
+  background-position: 50% 50%;
+}
+
+
+@media(max-width: 1133px) {
+  .description__main {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .description__wrap {
+    flex-wrap: wrap;
+  }
+
+  .description__wrap::before {
+    display: none;
+  }
+
+  .indicators {
+    display: none;
+  }
+
+  .about-company__title {
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+  }
+
+  .about-company__title::before {
+    max-width: none;
+  }
+
+  .about-company__text {
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+  }
+  
+  .about-company__text--last {
+    margin-bottom: 19px;
+  }
+}
+
+@media(max-width: 796px) {
+  .description {
+    position: unset;
+  }
+}
+
+@media(max-width: 768px) {
+  .about-company__title {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 375px) {
+  .about-company__text--first {
+    letter-spacing: 0.3px;
+  }
+
+  .about-company__text--last {
+    letter-spacing: -0.1px;
+  }
+}
+
+
+

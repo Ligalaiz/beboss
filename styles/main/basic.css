@@ -1,0 +1,17 @@
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.title {
+  position: relative;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
