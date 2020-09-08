@@ -188,3 +188,9 @@
     margin-right: 6px;
   }
 }
+
+@media(max-width: 375px) {
+  .plan-request__wrap {
+    padding-top: 23px;
+  }
+}
